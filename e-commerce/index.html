@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>E-commerce</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!-- Header -->
+	<header class="clearfix">
+		<div class="content_wrapper">
+			<div class="logo_title_box">
+				<img src="img/logo.png" alt="">
+				<div class="title_box">
+					<h1>Название  компании</h1>
+					<h6>самая клевая компания</h6>				
+				</div>
+			</div>
+			<div class="contacts_box">
+				<p>+7(499) 777-77-77<br>+7(499) 777-77-77</p>
+				<a href="#" id="link_feedback" onclick="openFeedback()">Обратная связь</a>			
+			</div>
+		</div>
+	</header> 
+	<!-- Feedback block -->
+	<div id="feedback">
+		<div class="feedback_box">
+			<div class="close" onclick="closeFeedback()"><img src="img/close.png"></div>
+			<form action="action_page.php">
+				<fieldset>
+					<legend>Обратная связь</legend>
+					Ваше имя *<br>
+					<input type="text" name="client_name" value=""><br>
+					Телефон *<br>
+					<input type="text" name="telephone" value=""><br>
+					Email *<br>
+					<input type="text" id="nessesary_field" name="email" value="" placeholder="Поле обязательно для заполнения"><br>
+					Сообщение<br>
+					<textarea name="message" rows="4" cols="1"></textarea><br>
+					<input type="submit" name="ОТПРАВИТЬ">
+				</fieldset>
+			</form>
+		</div>
+	</div> <!-- End of Feedback block -->
+	<!-- Top menu -->
+	<nav class="top_nav">
+		<div class="content_wrapper">
+			<ul>
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">Доставка и оплата</a></li>
+				<li><a href="#">Прайс-лист</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Slider -->
+	<div class="slider">
+		<button type="button" class="arrow left_box"><img src="img/left_arrow.png" alt=""></button>
+		<div class="slides_box">
+			<img src="img/slide1.png" alt="" class="active_slide">
+			<!-- <img src="img/slide2.png" alt=""> -->
+		</div>
+		<button type="button" class="arrow right_box"><img src="img/right_arrow.png" alt=""></button>	
+	</div>
+	<!-- Main block -->
+	<div class="content_wrapper clearfix">
+		<div id="items_sequence">
+			<a href="#" class="previous">Главная</a>/
+			<a href="#" class="previous">Каталог</a>/
+			<a href="#">Бытовая техника</a>
+		</div>	
+		<!-- Side menu -->
+		<aside>
+			<ul>
+				<li class="side_menu_item"><a href="#">Автомобили</a></li>
+				<li class="side_menu_item side_menu_item_dropdown"><a href="#">Бытовая техника</a>
+					<ul class="dropdown_submenu">
+						<li><a href="#">Микроволновки</a></li>
+						<li><a href="#">Холодильники</a></li>
+						<li><a href="#">Посудомоечные машины</a></li>
+						<li><a href="#">Чайники</a></li>
+					</ul>
+				</li>
+				<li class="side_menu_item"><a href="#">Мобильная техника</a></li>
+				<li class="side_menu_item"><a href="#">Компьютеры</a></li>
+				<li class="side_menu_item"><a href="#">Одежда</a></li>
+				<li class="side_menu_item"><a href="#">Недвижимость</a></li>
+			</ul>
+			<div class="download_pricelist clearfix">
+				<a href="#"><img src="img/price_list_excel.png"></a>
+				<a href="#"><h3>Прайс-лист</h3></a>
+			</div>
+		</aside>
+		<!-- Products block -->
+		<section>
+			<div class="product_box">
+				<div class="product_photo">
+					<img src="img/nophoto.png" alt="">
+				</div>
+				<div class="product_description">
+					<p>Самый клевый чайник, который надо купить! Самый клевый чайник, который надо купить! Самый клевый чайник, который надо купить! Самый клевый чайник, который надо купить!</p>			
+				</div>
+				<p id="price">1 900 р.</p>
+				<a href="#"><img src="img/addtobasket_mini.png" alt="" id="mini_add"></a>
+			</div>
+			<div class="product_box">
+				<div class="product_photo">
+					<img src="img/nophoto.png" alt="">
+				</div>
+				<div class="product_description">
+					<p>Самый клевый чайник, который надо купить</p>			
+				</div>
+				<p id="price">1 900 р.</p>
+				<a href="#"><img src="img/addtobasket_mini.png" alt="" id="mini_add"></a>
+			</div>
+			<div class="product_box">
+				<div class="product_photo">
+					<img src="img/nophoto.png" alt="">
+				</div>
+				<div class="product_description">
+					<p>Самый клевый чайник, который надо купить!</p>			
+				</div>
+				<p id="price">1 900 р.</p>
+				<a href="#"><img src="img/addtobasket_mini.png" alt="" id="mini_add"></a>
+			</div>
+			<div class="product_box">
+				<div class="product_photo">
+					<img src="img/nophoto.png" alt="">
+				</div>
+				<div class="product_description">
+					<p>Самый клевый чайник, который надо купить!</p>			
+				</div>
+				<p id="price">1 900 р.</p>
+				<a href="#"><img src="img/addtobasket_mini.png" alt="" id="mini_add"></a>
+			</div>
+			<div class="product_box">
+				<div class="product_photo">
+					<img src="img/nophoto.png" alt="">
+				</div>
+				<div class="product_description">
+					<p>Самый клевый чайник, который надо купить!</p>			
+				</div>
+				<p id="price">1 900 р.</p>
+				<a href="#"><img src="img/addtobasket_mini.png" alt="" id="mini_add"></a>
+			</div>
+			<!-- Pages with products boxes -->
+			<div class="pages_numbers">
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<a href="#" class="active">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">6</a>
+				<a href="#">7</a>
+			</div>
+			<hr>
+			<!-- Text about company -->
+			<div class="company_description clearfix">
+				<p>Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.характерные для этого жанра мотивы: неразделённой любви, ухода молодости, угасания души.</p>
+				<span></span>
+				<p>Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.</p>
+			</div>
+		</section>
+	</div> <!-- End of Main block -->
+
+	<!-- Footer -->
+	<footer>
+		<div class="content_wrapper clearfix">
+			<div class="info">
+				<p>&copy 2012–2013 ЗАО «Компания»<br>info@name.ru</p>				
+			</div>
+			<nav class="bottom_nav">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">Прайс-лист</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="site_development">
+				<img src="img/company.png" alt="">
+				<p><a href="#">Разработка сайта</a> —<br>компания «Пиксель Плюс»</p>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/script.js" ></script>
+</body>
+</html>
